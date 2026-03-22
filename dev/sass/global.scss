@@ -1,0 +1,41 @@
+@use "variables" as variables;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; // iOS
+}
+
+img:not([alt]),
+img[alt=""] {
+    filter: blur(10px);
+}
+
+i, 
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.d-none {
+    display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
